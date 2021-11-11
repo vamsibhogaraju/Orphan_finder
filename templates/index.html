@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>Finding Orphan Pages</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>ORPHAN PAGE</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form  name="finddata" action="/submit" method="post">
+    	<input type="text" name="save_data_path" id="save_data_path" placeholder="Where to save the files" required="required" />
+        <input type="text" name="path_main_folder" id="path_main_folder" placeholder="Project path" required="required" />
+		<input type="text" name="start_file_path" id="start_file_path" placeholder="starting file path" required="required" />
+		<input type="text" name="start_file" id="start_file" placeholder="starting file name" required="required" />
+		
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">FIND</button>
+    </form>
+
+ 
+
+ </div>
+
+
+</body>
+</html>
